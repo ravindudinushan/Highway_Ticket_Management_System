@@ -14,7 +14,6 @@ import java.util.Date;
 @NoArgsConstructor
 @Entity
 public class Ticket {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int ticket_no;
@@ -25,5 +24,4 @@ public class Ticket {
     private double total_amount;
     private String end_date_time;
     private String status;
-
 }
