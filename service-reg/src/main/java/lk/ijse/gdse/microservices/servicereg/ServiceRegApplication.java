@@ -11,4 +11,5 @@ public class ServiceRegApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ServiceRegApplication.class, args);
 	}
+
 }
