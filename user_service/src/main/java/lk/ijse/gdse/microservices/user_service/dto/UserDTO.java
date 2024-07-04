@@ -11,15 +11,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserDTO {
-
     @NotNull
     @NotBlank(message = "user NIC number can be not null")
     private String user_NIC;
-
     @NotNull
     @NotBlank(message = "user name can be not null")
     private String user_name;
-
     @NotNull
     @NotBlank(message = "user address  can be not null")
     private String address;
