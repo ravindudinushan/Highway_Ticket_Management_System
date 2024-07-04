@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: TICKET-SERVICE
+  config:
+    import: "optional:configserver:http://localhost:8089"
