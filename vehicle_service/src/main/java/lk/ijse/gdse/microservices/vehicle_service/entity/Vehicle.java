@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 public class Vehicle {
-
     @Id
     private String registration_number;
     private String vehicle_chassis_number;
@@ -22,5 +21,4 @@ public class Vehicle {
     private String vehicle_engine;
     private String vehicle_fuel_type;
     private String userNIC;
-
 }
