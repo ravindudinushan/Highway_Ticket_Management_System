@@ -1,6 +1,5 @@
 package lk.ijse.gdse.microservices.user_service.service.impl;
 
-import jakarta.ws.rs.NotFoundException;
 import lk.ijse.gdse.microservices.user_service.dto.UserDTO;
 import lk.ijse.gdse.microservices.user_service.entity.User;
 import lk.ijse.gdse.microservices.user_service.repo.UserRepo;
@@ -31,6 +30,7 @@ public class UserServiceImpl implements UserService {
         if(userRepo.existsById(userDTO.getUser_NIC())){
             throw new RuntimeException("Customer Id "+userDTO.getUser_NIC()+" All ready exist");
         }
+
         userRepo.save(modelMapper.map(userDTO, User.class));
     }
 
@@ -39,6 +39,7 @@ public class UserServiceImpl implements UserService {
         if(!userRepo.existsById(userDTO.getUser_NIC())){
             throw new RuntimeException("Customer Id "+userDTO.getUser_NIC()+" does not exist");
         }
+
         userRepo.save(modelMapper.map(userDTO, User.class));
     }
 }
