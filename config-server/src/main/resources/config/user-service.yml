@@ -17,7 +17,6 @@ spring:
     database: mysql
     hibernate:
       ddl-auto: update
-
 eureka:
   client:
     register-with-eureka: true
