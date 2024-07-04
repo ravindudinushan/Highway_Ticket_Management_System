@@ -18,6 +18,7 @@ public class PaymentController {
 
     @Autowired
     public RestTemplate restTemplate;
+
     @PatchMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public void updateTicketDetails(@RequestBody PaymentDTO paymentDTO){
         System.out.println(paymentDTO);
